@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="shortcut icon" type="image/x-icon" href="images/plane.ico" />
+	<script src="js/formValidate.js"></script>
+</head>
+
+<body>
+	<header>
+		<div id="leftname">
+				<p>Wanderlust Travels</p>
+				<img src="images/travel.png" alt="icon"/>
+		</div>
+	</header>
+
+	<nav id = "navigation">
+		<ul>
+			<li><a href ="index.html">Home</a></li>
+			<li><a href ="packages.html">Packages</a></li>
+			<li><a href ="services.html">Services</a></li>
+			<li><a href ="contactUs.html">Contact Us</a></li>
+			<li><a href ="#">Blog</a></li>
+		</ul>
+	</nav>
+
+	<section id="content">
+		<form id="contactform" action="index.html">
+			<fieldset>
+				<h1>Contact US</h1>
+					<ul>
+						<li>
+							<label for="fname">First Name</label>
+							<input type="text" id="fname" name="fname">
+							<p class="infoError error" id="fname_error">* Required field</p>
+						</li>
+						<li>
+							<label for="lname">Last Name</label>
+							<input type="text" id="lname" name="lname">
+							<p class="infoError error" id="lname_error">* Required field</p>
+						</li>
+						<li>
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" />
+							<p class="infoError error" id="email_error">* Required field</p>
+							<p class="infoError error" id="emailformat_error">* Invalid email address</p>
+						</li>
+						<li>
+							<label for="phone">Phone</label>
+							<input type="tel" id="phone" name="phone"/>
+							<p class="infoError error" id="phone_error">* Required field</p>
+							<p class="infoError error" id="phoneformat_error">* Invalid phone number</p>
+						</li>
+						<li>
+							<label for="contact">Contact me by</label>
+							<select id="contact" name="contact">
+								<option>Email</option>
+								<option>Phone</option>
+							</select>
+							<p class="infoError error" id="contact_error">* Required field</p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<label for="inquiry">Inquiry Type</label>
+							<select id="inquiry" name="inquiry">
+								<option>General</option>
+								<option>Planning a vacation</option>
+								<option>Existing Booking</option>
+								<option>International travel-Planning/Booking</option>
+								<option>Travel visa</option>
+								<option>Travel insurance</option>
+								<option>Other</option>
+							</select>
+						</li>
+						<li>
+							<label for="comments">Comments</label>
+							<textarea id="comments" name="comments" rows="10"></textarea>
+						</li>
+					</ul>
+				<p class="center">
+					<button type="submit" id="submit">Send</button>
+					<button type="reset" id="clear">Reset</button>
+				</p>
+			</fieldset>		 
+		</form>
+	</section>
+	
+		<footer>
+			<nav id="social">
+				<ul>
+						<li><a href ="index.html">Home</a></li>
+						<li><a href ="packages.html">Packages</a></li>
+						<li><a href ="services.html">Services</a></li>
+						<li><a href ="contactUs.html">Contact Us</a></li>
+						<li><a href ="#">Blog</a></li>
+				</ul>
+			</nav>
+		</footer>
+</body>
+</html>
